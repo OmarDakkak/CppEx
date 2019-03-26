@@ -8,18 +8,23 @@
  * File:   main.cpp
  * Author: macbookpro
  *
- * Created on March 26, 2019, 2:03 PM
+ * Created on March 26, 2019, 1:40 PM
  */
 
 #include <cstdlib>
+#include <iostream>
+#include "liste.h"
 
 using namespace std;
 
-/*
- * 
- */
-int main(int argc, char** argv) {
 
+int main(int argc, char** argv) {
+    liste a(3);
+    a.saisie(); 
+    liste b;
+    b=a;
+    a.affiche();
+    b.affiche();
     return 0;
 }
 
